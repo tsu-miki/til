@@ -1,0 +1,16 @@
+name: index
+
+on:
+  pull_request:
+  push:
+    branches: [main]
+
+jobs:
+  check-index:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: 目次が最新か確認する
+        run: |
+          ./scripts/build-index.sh
+          git diff --exit-code README.md
