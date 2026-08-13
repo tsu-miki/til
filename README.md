@@ -25,7 +25,7 @@ git add . && git commit -m "kotlin: sealed interface と網羅的 when"
 
 現在 1 件。
 
-### kotlin
+### ai
 
-- [sealed interface なら when に else を書かずに済む](./kotlin/sealed-interface-exhaustive-when.md)
+- [AI に投げる前に、受け入れ条件を人間が設計しておく](./ai/acceptance-criteria-before-delegating.md)
 <!-- index:end -->
