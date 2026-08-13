@@ -27,5 +27,5 @@ git add . && git commit -m "kotlin: sealed interface と網羅的 when"
 
 ### ai
 
-- [AI に投げる前に、受け入れ条件を人間が設計しておく](./ai/acceptance-criteria-before-delegating.md)
+- [AI に実装を任せる前に、受け入れ条件を自分で書いておく](./ai/acceptance-criteria-before-delegating.md)
 <!-- index:end -->
