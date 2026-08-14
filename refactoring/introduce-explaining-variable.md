@@ -1,20 +1,26 @@
 # 説明用の変数の導入
 
-一つの変数を上書きしながら計算を進めることを破壊的代入といい、これをやめて段階ごとに名前を付けると、その行だけを見て何の金額なのかが分かる。
+一つの変数を上書きしながら使いまわすことを破壊的代入といい、これをやめて計算のステップごとに目的を表す名前の変数を用意すると、名前がそのまま説明になる。
 
-```kotlin
-// before: price が 3 回書き換わる
-var price = quantity * unitPrice
-price -= couponAmount
-if (price <= 3000) price += 500
+```java
+// before: price を 3 つの目的に使いまわしている
+int price = quantity * unitPrice;
 
-// after: 段階ごとに名前を付ける
-val subtotal = quantity * unitPrice
-val discounted = subtotal - couponAmount
-val shipping = if (discounted > 3000) 0 else 500
-val price = discounted + shipping
+if( price < 3000 )
+    price += 500;  // 送料
+
+price = price * taxRate();
+
+// after: 目的ごとのローカル変数を使う
+int basePrice = quantity * unitPrice;
+
+int shippingCost = 0;      // 送料の初期値
+if( basePrice < 3000 )
+    shippingCost = 500;    // 3000 円未満は送料 500 円
+
+int itemPrice = (basePrice + shippingCost) * taxRate();
 ```
 
-送料が無料になる金額を変えたくなったとき、触るのは `shipping` の 1 行で済む。Fowler のカタログでは Extract Variable という名前で、旧称が Introduce Explaining Variable。上書きされる変数を用途ごとに分ける操作には Split Variable という項目が別にある。
+`basePrice` は数量×単価、`shippingCost` は送料、`itemPrice` は税込金額と、変数名がそのままステップの説明になる。before の `price` は行によって指すものが変わるので、途中の 1 行を直すと後ろの行すべてに影響が及ぶ。
 
-参照: https://refactoring.com/catalog/extractVariable.html
+参照: 増田亨『現場で役立つシステム設計の原則』第 1 章 https://gihyo.jp/book/2017/978-4-7741-9087-7

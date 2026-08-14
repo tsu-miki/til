@@ -1,29 +1,24 @@
 # メソッドの抽出
 
-処理のまとまりを切り出して名前を付けると、変更の影響範囲がメソッドの中に閉じ、名前からどのような処理が行われるかも分かるようになる。
+処理のまとまりをメソッドに切り出すと、変更の影響範囲がメソッド内に閉じ、名前からどのような処理が行われるかが分かるようになる。
 
-```kotlin
-// before
-fun printOwing(invoice: Invoice) {
-    printBanner()
-    val outstanding = invoice.calculateOutstanding()
-    // 明細の印字
-    println("name: ${invoice.customer}")
-    println("amount: $outstanding")
-}
+```java
+// before: 送料計算が呼び出し側に埋まっている
+int shippingCost = 0;
+if( basePrice < 3000 )
+    shippingCost = 500;
 
-// after
-fun printOwing(invoice: Invoice) {
-    printBanner()
-    printDetails(invoice, invoice.calculateOutstanding())
-}
+// after: 送料計算をメソッドに独立させる
+int shippingCost = shippingCost(basePrice);  // 送料計算メソッド
 
-private fun printDetails(invoice: Invoice, outstanding: Int) {
-    println("name: ${invoice.customer}")
-    println("amount: $outstanding")
+// メソッドに独立させた送料計算のロジック
+int shippingCost(int basePrice) {
+    if( basePrice < 3000 ) return 500;
+
+    return 0;
 }
 ```
 
-「ここから明細の印字」とコメントを書きたくなったら、その範囲がだいたいそのまま抽出できる。抽出後の `printOwing` には、バナーを出して明細を出す、という手順だけが並ぶ。2nd edition では関数も対象に含めて Extract Function という名前になっている。
+送料の判定に使う 3000 と 500 がメソッドの中だけに現れるので、ルールが変わったときに直すのはこのメソッドで済む。呼び出し側からは if 文が消えて、単価×数量 → 送料 → 税込という流れだけが残る。
 
-参照: https://refactoring.com/catalog/extractFunction.html
+参照: 増田亨『現場で役立つシステム設計の原則』第 1 章 https://gihyo.jp/book/2017/978-4-7741-9087-7
