@@ -23,11 +23,27 @@ git add . && git commit -m "kotlin: sealed interface と網羅的 when"
 
 <!-- index:begin -->
 
-現在 3 件。
+現在 7 件。
+
+### accessibility
+
+- [ボタンに見えても、遷移するならリンクにする](./accessibility/no-anchor-inside-button.md)
 
 ### ai
 
 - [AI に実装を任せる前に、受け入れ条件を自分で書いておく](./ai/acceptance-criteria-before-delegating.md)
+
+### domain-knowledge
+
+- [経歴と略歴は別物](./domain-knowledge/keireki-and-ryakureki.md)
+
+### frontend-e2e
+
+- [Selenide の shouldHave は条件を複数受け取れる](./frontend-e2e/selenide-should-have-multiple-conditions.md)
+
+### k8s
+
+- [kubectl rollout restart で Pod を作り直す](./k8s/rollout-restart-deployment.md)
 
 ### refactoring
 
