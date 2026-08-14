@@ -23,9 +23,14 @@ git add . && git commit -m "kotlin: sealed interface と網羅的 when"
 
 <!-- index:begin -->
 
-現在 1 件。
+現在 3 件。
 
 ### ai
 
 - [AI に実装を任せる前に、受け入れ条件を自分で書いておく](./ai/acceptance-criteria-before-delegating.md)
+
+### refactoring
+
+- [メソッドの抽出](./refactoring/extract-method.md)
+- [説明用の変数の導入](./refactoring/introduce-explaining-variable.md)
 <!-- index:end -->
