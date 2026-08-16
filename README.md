@@ -23,7 +23,7 @@ git add . && git commit -m "kotlin: sealed interface と網羅的 when"
 
 <!-- index:begin -->
 
-現在 7 件。
+現在 8 件。
 
 ### accessibility
 
@@ -39,6 +39,7 @@ git add . && git commit -m "kotlin: sealed interface と網羅的 when"
 
 ### frontend-e2e
 
+- [Selenide の baseUrl は src/test/resources に置いた selenide.properties で設定できる](./frontend-e2e/selenide-base-url-in-test-resources.md)
 - [Selenide の shouldHave は条件を複数受け取れる](./frontend-e2e/selenide-should-have-multiple-conditions.md)
 
 ### k8s
