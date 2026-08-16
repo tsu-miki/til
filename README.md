@@ -23,7 +23,7 @@ git add . && git commit -m "kotlin: sealed interface と網羅的 when"
 
 <!-- index:begin -->
 
-現在 8 件。
+現在 10 件。
 
 ### accessibility
 
@@ -33,13 +33,21 @@ git add . && git commit -m "kotlin: sealed interface と網羅的 when"
 
 - [AI に実装を任せる前に、受け入れ条件を自分で書いておく](./ai/acceptance-criteria-before-delegating.md)
 
+### build-tools
+
+- [src/test/resources の中身は、テスト実行時のクラスパス直下に置かれる](./build-tools/test-resources-on-classpath-root.md)
+
+### design
+
+- [YAGNI は予測で増やす複雑さへの警告で、手元にある情報を捨てる理由にはならない](./design/yagni-does-not-mean-discarding-known-information.md)
+
 ### domain-knowledge
 
 - [経歴と略歴は別物](./domain-knowledge/keireki-and-ryakureki.md)
 
 ### frontend-e2e
 
-- [Selenide の baseUrl は src/test/resources に置いた selenide.properties で設定できる](./frontend-e2e/selenide-base-url-in-test-resources.md)
+- [Selenide の baseUrl は selenide.properties で設定できる](./frontend-e2e/selenide-base-url-in-properties-file.md)
 - [Selenide の shouldHave は条件を複数受け取れる](./frontend-e2e/selenide-should-have-multiple-conditions.md)
 
 ### k8s
