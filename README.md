@@ -23,7 +23,7 @@ git add . && git commit -m "kotlin: sealed interface と網羅的 when"
 
 <!-- index:begin -->
 
-現在 10 件。
+現在 13 件。
 
 ### accessibility
 
@@ -37,8 +37,14 @@ git add . && git commit -m "kotlin: sealed interface と網羅的 when"
 
 - [src/test/resources の中身は、テスト実行時のクラスパス直下に置かれる](./build-tools/test-resources-on-classpath-root.md)
 
+### db
+
+- [交差テーブルには、関連の意味を表す名前をつける](./db/name-junction-table-after-relationship.md)
+
 ### design
 
+- [既定値は事故を防ぐが、アクセス制御にはならない](./design/default-is-not-access-control.md)
+- [一覧 API が既定で全件を返さない設計は、標準化された選択肢](./design/list-api-safe-default.md)
 - [YAGNI は予測で増やす複雑さへの警告で、手元にある情報を捨てる理由にはならない](./design/yagni-does-not-mean-discarding-known-information.md)
 
 ### domain-knowledge
