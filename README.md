@@ -23,7 +23,7 @@ git add . && git commit -m "kotlin: sealed interface と網羅的 when"
 
 <!-- index:begin -->
 
-現在 10 件。
+現在 11 件。
 
 ### accessibility
 
@@ -39,6 +39,7 @@ git add . && git commit -m "kotlin: sealed interface と網羅的 when"
 
 ### design
 
+- [外部 DB との同期は、生の取り込み・整えたもの・業務用の 3 層に分ける](./design/medallion-architecture-for-external-db-sync.md)
 - [YAGNI は予測で増やす複雑さへの警告で、手元にある情報を捨てる理由にはならない](./design/yagni-does-not-mean-discarding-known-information.md)
 
 ### domain-knowledge
