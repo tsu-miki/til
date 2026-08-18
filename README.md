@@ -33,6 +33,11 @@ git add . && git commit -m "kotlin: sealed interface と網羅的 when"
 
 - [AI に実装を任せる前に、受け入れ条件を自分で書いておく](./ai/acceptance-criteria-before-delegating.md)
 
+### api-design
+
+- [既定値は事故を防ぐが、アクセス制御にはならない](./api-design/default-is-not-access-control.md)
+- [一覧 API が既定で全件を返さない設計は、標準化された選択肢](./api-design/list-api-safe-default.md)
+
 ### build-tools
 
 - [src/test/resources の中身は、テスト実行時のクラスパス直下に置かれる](./build-tools/test-resources-on-classpath-root.md)
@@ -43,11 +48,7 @@ git add . && git commit -m "kotlin: sealed interface と網羅的 when"
 
 ### design
 
-- [既定値は事故を防ぐが、アクセス制御にはならない](./design/default-is-not-access-control.md)
-- [業務の用語に合わせて作ったクラスをドメインオブジェクトと呼ぶ](./design/domain-object-named-after-business-term.md)
-- [一覧 API が既定で全件を返さない設計は、標準化された選択肢](./design/list-api-safe-default.md)
 - [外部 DB の取り込みは、メダリオンアーキテクチャで 3 層に分けるのが選択肢の一つ](./design/medallion-architecture-for-external-db-sync.md)
-- [値オブジェクトは、その値のルールを型の中に閉じ込める](./design/value-object-holds-rule-of-the-value.md)
 - [YAGNI は予測で増やす複雑さへの警告で、手元にある情報を捨てる理由にはならない](./design/yagni-does-not-mean-discarding-known-information.md)
 
 ### domain-knowledge
@@ -66,6 +67,11 @@ git add . && git commit -m "kotlin: sealed interface と網羅的 when"
 ### kotlin
 
 - [JPA エンティティで `apply` を使うのは、引数なしコンストラクタ要件の裏返し](./kotlin/jpa-entity-apply-and-noarg-constructor.md)
+
+### modeling
+
+- [業務の用語に合わせて作ったクラスをドメインオブジェクトと呼ぶ](./modeling/domain-object-named-after-business-term.md)
+- [値オブジェクトは、その値のルールを型の中に閉じ込める](./modeling/value-object-holds-rule-of-the-value.md)
 
 ### refactoring
 
