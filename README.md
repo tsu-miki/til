@@ -23,7 +23,7 @@ git add . && git commit -m "kotlin: sealed interface と網羅的 when"
 
 <!-- index:begin -->
 
-現在 15 件。
+現在 16 件。
 
 ### accessibility
 
@@ -61,6 +61,10 @@ git add . && git commit -m "kotlin: sealed interface と網羅的 when"
 ### k8s
 
 - [kubectl rollout restart で Pod を作り直す](./k8s/rollout-restart-deployment.md)
+
+### kotlin
+
+- [JPA エンティティで `apply` を使うのは、引数なしコンストラクタ要件の裏返し](./kotlin/jpa-entity-apply-and-noarg-constructor.md)
 
 ### refactoring
 
