@@ -23,7 +23,7 @@ git add . && git commit -m "kotlin: sealed interface と網羅的 when"
 
 <!-- index:begin -->
 
-現在 14 件。
+現在 16 件。
 
 ### accessibility
 
@@ -44,7 +44,9 @@ git add . && git commit -m "kotlin: sealed interface と網羅的 when"
 ### design
 
 - [既定値は事故を防ぐが、アクセス制御にはならない](./design/default-is-not-access-control.md)
+- [業務の用語に合わせて作ったクラスをドメインオブジェクトと呼ぶ](./design/domain-object-named-after-business-term.md)
 - [一覧 API が既定で全件を返さない設計は、標準化された選択肢](./design/list-api-safe-default.md)
+- [値オブジェクトは、その値のルールを型の中に閉じ込める](./design/value-object-holds-rule-of-the-value.md)
 - [YAGNI は予測で増やす複雑さへの警告で、手元にある情報を捨てる理由にはならない](./design/yagni-does-not-mean-discarding-known-information.md)
 
 ### domain-knowledge
