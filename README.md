@@ -23,7 +23,7 @@ git add . && git commit -m "kotlin: sealed interface と網羅的 when"
 
 <!-- index:begin -->
 
-現在 19 件。
+現在 20 件。
 
 ### accessibility
 
@@ -80,6 +80,7 @@ git add . && git commit -m "kotlin: sealed interface と網羅的 when"
 
 ### rust
 
+- [コレクションをその後使わないなら `into_iter`、使うなら `iter`](./rust/into-iter-consumes-collection.md)
 - [年・月・日の 3 つの数値は、日付になるとは限らない](./rust/naive-date-from-ymd-opt.md)
 
 ### ui-design
