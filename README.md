@@ -23,7 +23,7 @@ git add . && git commit -m "kotlin: sealed interface と網羅的 when"
 
 <!-- index:begin -->
 
-現在 17 件。
+現在 18 件。
 
 ### accessibility
 
@@ -77,4 +77,8 @@ git add . && git commit -m "kotlin: sealed interface と網羅的 when"
 
 - [メソッドの抽出](./refactoring/extract-method.md)
 - [説明用の変数の導入](./refactoring/introduce-explaining-variable.md)
+
+### rust
+
+- [年・月・日の 3 つの数値は、日付になるとは限らない](./rust/naive-date-from-ymd-opt.md)
 <!-- index:end -->
