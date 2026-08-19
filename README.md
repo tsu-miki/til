@@ -23,7 +23,7 @@ git add . && git commit -m "kotlin: sealed interface と網羅的 when"
 
 <!-- index:begin -->
 
-現在 18 件。
+現在 19 件。
 
 ### accessibility
 
@@ -81,4 +81,8 @@ git add . && git commit -m "kotlin: sealed interface と網羅的 when"
 ### rust
 
 - [年・月・日の 3 つの数値は、日付になるとは限らない](./rust/naive-date-from-ymd-opt.md)
+
+### ui-design
+
+- [近接の原則で効いているのは余白の絶対値ではなく、グループの内と外の差](./ui-design/proximity-relative-spacing.md)
 <!-- index:end -->
