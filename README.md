@@ -23,7 +23,7 @@ git add . && git commit -m "kotlin: sealed interface と網羅的 when"
 
 <!-- index:begin -->
 
-現在 21 件。
+現在 22 件。
 
 ### accessibility
 
@@ -89,5 +89,6 @@ git add . && git commit -m "kotlin: sealed interface と網羅的 when"
 
 ### ui-design
 
+- [ユーザーに見せる名前は、実装の画面分類ではなく識別したい対象で決める](./ui-design/name-by-object-not-screen-type.md)
 - [近接の原則で効いているのは余白の絶対値ではなく、グループの内と外の差](./ui-design/proximity-relative-spacing.md)
 <!-- index:end -->
