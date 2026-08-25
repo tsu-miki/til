@@ -23,7 +23,7 @@ git add . && git commit -m "kotlin: sealed interface と網羅的 when"
 
 <!-- index:begin -->
 
-現在 26 件。
+現在 29 件。
 
 ### accessibility
 
@@ -57,6 +57,7 @@ git add . && git commit -m "kotlin: sealed interface と網羅的 when"
 
 ### domain-knowledge
 
+- [公開範囲がシビアなデータは、出す形をドメインに詳しい人に見てもらう](./domain-knowledge/ask-domain-expert-how-to-expose-data.md)
 - [経歴と略歴は別物](./domain-knowledge/keireki-and-ryakureki.md)
 
 ### frontend-e2e
@@ -86,10 +87,18 @@ git add . && git commit -m "kotlin: sealed interface と網羅的 when"
 - [メソッドの抽出](./refactoring/extract-method.md)
 - [説明用の変数の導入](./refactoring/introduce-explaining-variable.md)
 
+### ruby
+
+- [Rails で HTML を解析するときの定番は Nokogiri（Rails ではなく Ruby の gem）](./ruby/nokogiri-html-parser.md)
+
 ### rust
 
 - [コレクションをその後使わないなら `into_iter`、使うなら `iter`](./rust/into-iter-consumes-collection.md)
 - [年・月・日の 3 つの数値は、日付になるとは限らない](./rust/naive-date-from-ymd-opt.md)
+
+### tools
+
+- [Slack の Ctrl+F は、開いているチャンネルの中だけを検索する](./tools/slack-search-in-current-channel.md)
 
 ### ui-design
 
