@@ -47,7 +47,10 @@ git add . && git commit -m "kotlin: sealed interface と網羅的 when"
 
 ### db
 
+- [依存関係のない関連に外部キーを直接持たせると、NULL で登録して後から更新することになる](./db/junction-table-for-independent-relationship.md)
 - [交差テーブルには、関連の意味を表す名前をつける](./db/name-junction-table-after-relationship.md)
+- [イベントを表すテーブルの日時属性を 1 つに絞ると、UPDATE がなくなる](./db/one-timestamp-per-event-entity.md)
+- [リソースに「更新日時」を持たせたくなったら、まだ抽出できていないイベントがある](./db/updated-at-hides-events.md)
 
 ### design
 
