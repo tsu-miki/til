@@ -23,7 +23,7 @@ git add . && git commit -m "kotlin: sealed interface と網羅的 when"
 
 <!-- index:begin -->
 
-現在 30 件。
+現在 31 件。
 
 ### accessibility
 
@@ -67,6 +67,7 @@ git add . && git commit -m "kotlin: sealed interface と網羅的 when"
 
 ### frontend
 
+- [Angular では @Input から派生する値を getter で作れる](./frontend/angular-getter-derives-value-from-input.md)
 - [「データがないときは表示しない」の書き方は、フレームワークの形式で決まる](./frontend/render-nothing-when-no-data.md)
 
 ### k8s
