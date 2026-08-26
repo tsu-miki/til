@@ -23,7 +23,7 @@ git add . && git commit -m "kotlin: sealed interface と網羅的 when"
 
 <!-- index:begin -->
 
-現在 26 件。
+現在 27 件。
 
 ### accessibility
 
@@ -48,6 +48,7 @@ git add . && git commit -m "kotlin: sealed interface と網羅的 when"
 ### db
 
 - [交差テーブルには、関連の意味を表す名前をつける](./db/name-junction-table-after-relationship.md)
+- [イベントを表すテーブルの日時属性を 1 つに絞ると、UPDATE がなくなる](./db/one-timestamp-per-event-entity.md)
 
 ### design
 
