@@ -23,7 +23,7 @@ git add . && git commit -m "kotlin: sealed interface と網羅的 when"
 
 <!-- index:begin -->
 
-現在 30 件。
+現在 33 件。
 
 ### accessibility
 
