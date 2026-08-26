@@ -23,7 +23,7 @@ git add . && git commit -m "kotlin: sealed interface と網羅的 when"
 
 <!-- index:begin -->
 
-現在 29 件。
+現在 30 件。
 
 ### accessibility
 
@@ -98,6 +98,7 @@ git add . && git commit -m "kotlin: sealed interface と網羅的 when"
 
 ### tools
 
+- [comm はソート済みの 2 ファイルを 3 列で突き合わせる](./tools/comm-compares-sorted-files.md)
 - [Slack の Ctrl+F は、開いているチャンネルの中だけを検索する](./tools/slack-search-in-current-channel.md)
 
 ### ui-design
