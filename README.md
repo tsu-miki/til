@@ -23,7 +23,7 @@ git add . && git commit -m "kotlin: sealed interface と網羅的 when"
 
 <!-- index:begin -->
 
-現在 29 件。
+現在 33 件。
 
 ### accessibility
 
@@ -36,6 +36,7 @@ git add . && git commit -m "kotlin: sealed interface と網羅的 when"
 ### api-design
 
 - [API のバージョンを切るのは、破壊的変更かつ利用箇所が複数あるとき](./api-design/api-version-when-breaking-and-multiple-consumers.md)
+- [`Authorization: Bearer` の Bearer は、中身の種類ではなく送り方](./api-design/bearer-is-how-not-what.md)
 - [既定値は事故を防ぐが、アクセス制御にはならない](./api-design/default-is-not-access-control.md)
 - [一覧 API が既定で全件を返さない設計は、標準化された選択肢](./api-design/list-api-safe-default.md)
 - [アウトサイドインで変わるのは設計の順序で、デプロイの順序ではない](./api-design/outside-in-is-design-order-not-deploy-order.md)
