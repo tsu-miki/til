@@ -23,7 +23,7 @@ git add . && git commit -m "kotlin: sealed interface と網羅的 when"
 
 <!-- index:begin -->
 
-現在 33 件。
+現在 35 件。
 
 ### accessibility
 
@@ -71,6 +71,7 @@ git add . && git commit -m "kotlin: sealed interface と網羅的 when"
 
 ### frontend
 
+- [Angular では @Input から派生する値を getter で作れる](./frontend/angular-getter-derives-value-from-input.md)
 - [「データがないときは表示しない」の書き方は、フレームワークの形式で決まる](./frontend/render-nothing-when-no-data.md)
 
 ### k8s
@@ -102,6 +103,7 @@ git add . && git commit -m "kotlin: sealed interface と網羅的 when"
 
 ### tools
 
+- [comm はソート済みの 2 ファイルを 3 列で突き合わせる](./tools/comm-compares-sorted-files.md)
 - [Slack の Ctrl+F は、開いているチャンネルの中だけを検索する](./tools/slack-search-in-current-channel.md)
 
 ### ui-design
