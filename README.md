@@ -23,7 +23,7 @@ git add . && git commit -m "kotlin: sealed interface と網羅的 when"
 
 <!-- index:begin -->
 
-現在 35 件。
+現在 36 件。
 
 ### accessibility
 
@@ -56,6 +56,7 @@ git add . && git commit -m "kotlin: sealed interface と網羅的 when"
 ### design
 
 - [中途半端な統一を避ける方法は、全部やることではなく境界を明示すること](./design/consistency-needs-explainable-boundary.md)
+- [継承をやめろと言われるのは、親クラスの実装の詳細に子が依存するから](./design/inheritance-depends-on-parent-internals.md)
 - [外部 DB の取り込みは、メダリオンアーキテクチャで 3 層に分けるのが選択肢の一つ](./design/medallion-architecture-for-external-db-sync.md)
 - [YAGNI は予測で増やす複雑さへの警告で、手元にある情報を捨てる理由にはならない](./design/yagni-does-not-mean-discarding-known-information.md)
 
