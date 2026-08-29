@@ -39,6 +39,7 @@ git add . && git commit -m "kotlin: sealed interface と網羅的 when"
 - [`Authorization: Bearer` の Bearer は、中身の種類ではなく送り方](./api-design/bearer-is-how-not-what.md)
 - [既定値は事故を防ぐが、アクセス制御にはならない](./api-design/default-is-not-access-control.md)
 - [一覧 API が既定で全件を返さない設計は、標準化された選択肢](./api-design/list-api-safe-default.md)
+- [表示可否が関連リソースで決まる項目は、判定材料ごと渡さずサーバ側で落とす](./api-design/omit-hidden-field-instead-of-sending-visibility.md)
 - [アウトサイドインで変わるのは設計の順序で、デプロイの順序ではない](./api-design/outside-in-is-design-order-not-deploy-order.md)
 - [別々にデプロイするサービス間では、破壊的変更を expand と contract に分ける](./api-design/parallel-change-for-breaking-api-change.md)
 
@@ -56,6 +57,7 @@ git add . && git commit -m "kotlin: sealed interface と網羅的 when"
 ### design
 
 - [中途半端な統一を避ける方法は、全部やることではなく境界を明示すること](./design/consistency-needs-explainable-boundary.md)
+- [継承をやめろと言われるのは、親クラスの実装の詳細に子が依存するから](./design/inheritance-depends-on-parent-internals.md)
 - [外部 DB の取り込みは、メダリオンアーキテクチャで 3 層に分けるのが選択肢の一つ](./design/medallion-architecture-for-external-db-sync.md)
 - [YAGNI は予測で増やす複雑さへの警告で、手元にある情報を捨てる理由にはならない](./design/yagni-does-not-mean-discarding-known-information.md)
 
