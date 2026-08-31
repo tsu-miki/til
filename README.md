@@ -19,6 +19,15 @@ $EDITOR kotlin/sealed-interface-exhaustive-when.md
 git add . && git commit -m "kotlin: sealed interface と網羅的 when"
 ```
 
+## 月ごとのまとめ
+
+月末に、その月の TIL をテーマ別にまとめる。`monthly/YYYY-MM.md`。
+
+<!-- monthly:begin -->
+
+- [2026 年 8 月の学び](./monthly/2026-08.md)
+<!-- monthly:end -->
+
 ## 目次
 
 <!-- index:begin -->
