@@ -26,3 +26,14 @@ README.md の「書き方」に従う。
 ## 目次
 
 README.md の `<!-- index:begin -->` 〜 `<!-- index:end -->` は `scripts/build-index.sh` の生成物。手で編集しない。
+
+## 月ごとのまとめ
+
+月末に、その月に追加した TIL を `monthly/YYYY-MM.md` にまとめる。
+
+- ファイル名は `monthly/2026-08.md`、1 行目の見出しは `# 2026 年 8 月の学び`。
+- その月に追加された TIL は `git log --diff-filter=A --format=%ad --date=short -1 -- <path>` で確認する。
+- テーマごとに小見出しを立て、各 TIL に相対リンクを張る。TIL 本体に書いていないことは書かない。
+- 400 字の制限は TIL 1 件あたりの規約なので、まとめには適用しない。
+- 追加したら `./scripts/build-index.sh` を実行する。README の月次まとめ一覧も生成される。
+- `monthly/` は TIL ではないので、目次の件数・トピック一覧には含めない。
