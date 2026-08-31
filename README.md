@@ -23,7 +23,7 @@ git add . && git commit -m "kotlin: sealed interface と網羅的 when"
 
 <!-- index:begin -->
 
-現在 36 件。
+現在 38 件。
 
 ### accessibility
 
@@ -87,6 +87,7 @@ git add . && git commit -m "kotlin: sealed interface と網羅的 when"
 ### modeling
 
 - [業務の用語に合わせて作ったクラスをドメインオブジェクトと呼ぶ](./modeling/domain-object-named-after-business-term.md)
+- [時点で決まる絞り込みは、基準を持つモデルに判定させる](./modeling/judge-with-model-that-owns-the-criterion.md)
 - [値オブジェクトは、その値のルールを型の中に閉じ込める](./modeling/value-object-holds-rule-of-the-value.md)
 
 ### refactoring
