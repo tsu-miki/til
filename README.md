@@ -32,7 +32,7 @@ git add . && git commit -m "kotlin: sealed interface と網羅的 when"
 
 <!-- index:begin -->
 
-現在 37 件。
+現在 38 件。
 
 ### accessibility
 
@@ -85,6 +85,7 @@ git add . && git commit -m "kotlin: sealed interface と網羅的 when"
 
 ### k8s
 
+- [原因がわからないときは、デバッグログ入りイメージを kubectl edit で差し替える](./k8s/kubectl-edit-for-production-debug.md)
 - [kubectl rollout restart で Pod を作り直す](./k8s/rollout-restart-deployment.md)
 
 ### kotlin
