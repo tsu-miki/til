@@ -87,6 +87,7 @@ git add . && git commit -m "kotlin: sealed interface と網羅的 when"
 
 ### k8s
 
+- [原因がわからないときは、デバッグログ入りイメージを kubectl edit で差し替える](./k8s/kubectl-edit-for-production-debug.md)
 - [kubectl rollout restart で Pod を作り直す](./k8s/rollout-restart-deployment.md)
 
 ### kotlin
@@ -111,6 +112,7 @@ git add . && git commit -m "kotlin: sealed interface と網羅的 when"
 
 ### rust
 
+- [`&String` が `&str` の引数に通るのは deref coercion、`as_str()` はその明示形](./rust/deref-coercion-string-to-str.md)
 - [コレクションをその後使わないなら `into_iter`、使うなら `iter`](./rust/into-iter-consumes-collection.md)
 - [年・月・日の 3 つの数値は、日付になるとは限らない](./rust/naive-date-from-ymd-opt.md)
 
