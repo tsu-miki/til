@@ -5,6 +5,7 @@
 ## 書き方
 
 - 1 ファイル 1 学び。400 字以内に収める。
+- 学びは題材から一段上げて書く。特定の技術や案件の中だけで閉じる話は、それを使わない場面でも効く言い方を探し、題材は具体例として置く。
 - 構成は「タイトル → 要約 1 文 → 具体例（コード）→ 補足 → 参照リンク」。
 - ファイル名は `トピック/kebab-case.md`。
 - 未検証の推測は書かない。確認できた事実だけを残す。
@@ -47,7 +48,6 @@ git add . && git commit -m "kotlin: sealed interface と網羅的 when"
 - [API のバージョンを切るのは、破壊的変更かつ利用箇所が複数あるとき](./api-design/api-version-when-breaking-and-multiple-consumers.md)
 - [`Authorization: Bearer` の Bearer は、中身の種類ではなく送り方](./api-design/bearer-is-how-not-what.md)
 - [一覧 API の安全な既定値は事故を防ぐが、アクセス制御にはならない](./api-design/default-is-not-access-control.md)
-- [クライアントの N+1 を BFF に寄せる理由は、接続数の上限ではなく往復がユーザーの回線に乗ること](./api-design/n-plus-1-round-trips-not-connection-limit.md)
 - [表示可否が関連リソースで決まる項目は、判定材料ごと渡さずサーバ側で落とす](./api-design/omit-hidden-field-instead-of-sending-visibility.md)
 - [アウトサイドインで変わるのは設計の順序で、デプロイの順序ではない](./api-design/outside-in-is-design-order-not-deploy-order.md)
 - [別々にデプロイするサービス間では、破壊的変更を expand と contract に分ける](./api-design/parallel-change-for-breaking-api-change.md)
@@ -65,6 +65,7 @@ git add . && git commit -m "kotlin: sealed interface と網羅的 when"
 ### design
 
 - [中途半端な統一を避ける方法は、全部やることではなく境界を明示すること](./design/consistency-needs-explainable-boundary.md)
+- [昔の制約でできた設計をやめてよいかは、理由が環境由来か構造由来かで決まる](./design/design-rationale-environmental-or-structural.md)
 - [継承をやめろと言われるのは、親クラスの実装の詳細に子が依存するから](./design/inheritance-depends-on-parent-internals.md)
 - [外部 DB の取り込みは、メダリオンアーキテクチャで 3 層に分けるのが選択肢の一つ](./design/medallion-architecture-for-external-db-sync.md)
 - [YAGNI は予測で増やす複雑さへの警告で、手元にある情報を捨てる理由にはならない](./design/yagni-does-not-mean-discarding-known-information.md)
@@ -74,15 +75,15 @@ git add . && git commit -m "kotlin: sealed interface と網羅的 when"
 - [公開範囲がシビアなデータは、出す形をドメインに詳しい人に見てもらう](./domain-knowledge/ask-domain-expert-how-to-expose-data.md)
 - [経歴と略歴は別物](./domain-knowledge/keireki-and-ryakureki.md)
 
-### frontend-e2e
-
-- [Selenide の baseUrl は selenide.properties で設定できる](./frontend-e2e/selenide-base-url-in-properties-file.md)
-- [Selenide の shouldHave は条件を複数受け取れる](./frontend-e2e/selenide-should-have-multiple-conditions.md)
-
 ### frontend
 
 - [Angular では @Input から派生する値を getter で作れる](./frontend/angular-getter-derives-value-from-input.md)
 - [「データがないときは表示しない」の書き方は、フレームワークの形式で決まる](./frontend/render-nothing-when-no-data.md)
+
+### frontend-e2e
+
+- [Selenide の baseUrl は selenide.properties で設定できる](./frontend-e2e/selenide-base-url-in-properties-file.md)
+- [Selenide の shouldHave は条件を複数受け取れる](./frontend-e2e/selenide-should-have-multiple-conditions.md)
 
 ### k8s
 
