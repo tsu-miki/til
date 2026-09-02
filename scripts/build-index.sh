@@ -26,21 +26,22 @@ generate_index() {
   echo "現在 ${total_count} 件。"
   echo
 
-  local topic_directory topic_name article_path
-  for topic_directory in "$repository_root"/*/; do
-    topic_name="$(basename "$topic_directory")"
+  local topic_name article_path
+  # ディレクトリ名だけで並べる。末尾の / を付けたまま比較すると
+  # '-' < '/' のため frontend-e2e が frontend より前に来てしまう
+  while IFS= read -r topic_name; do
     case "$topic_name" in
       scripts|templates|.git|.github|"$monthly_directory_name") continue ;;
     esac
-    [ -n "$(find "$topic_directory" -maxdepth 1 -name '*.md' -print -quit)" ] || continue
+    [ -n "$(find "$repository_root/$topic_name" -maxdepth 1 -name '*.md' -print -quit)" ] || continue
 
     echo "### $topic_name"
     echo
-    for article_path in "$topic_directory"*.md; do
+    for article_path in "$repository_root/$topic_name"/*.md; do
       echo "- [$(title_of "$article_path")](./$topic_name/$(basename "$article_path"))"
     done
     echo
-  done
+  done < <(find "$repository_root" -mindepth 1 -maxdepth 1 -type d -printf '%f\n' | LC_ALL=C sort)
 }
 
 generate_monthly_index() {
