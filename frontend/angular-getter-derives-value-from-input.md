@@ -1,6 +1,6 @@
-# Angular では @Input から派生する値を getter で作れる
+# 入力から決まる値は、フィールドに持たずに導出する
 
-親から受け取った入力を加工した値は、getter として定義しておくとテンプレートから普通のプロパティと同じ書き方で参照できる。入力が変わるたびにフィールドを詰め直す必要がない。
+受け取った入力を加工した値をフィールドに詰めると、入力が変わるたびに詰め直す処理が要り、書き忘れた経路でずれる。参照されたときに計算すれば、ずれようがない。
 
 ```ts
 @Component({
@@ -10,6 +10,7 @@
 export class UserBadgeComponent {
   @Input({ required: true }) user!: User;
 
+  // 入力が変われば、そのまま追従する
   get displayName(): string {
     return `${this.user.lastName} ${this.user.firstName}`;
   }
@@ -20,6 +21,8 @@ export class UserBadgeComponent {
 }
 ```
 
-テンプレートの式に `user.lastName + ' ' + user.firstName` を直接書くより、名前がついている分だけ読める（「説明用の変数の導入」と同じ効果）。ただし getter は変更検知のたびに評価されるので、重い処理や、呼ばれるたびに新しい配列・オブジェクトを返す実装は避ける。シグナル入力を使っているなら `computed()` で同じことが書ける。
+テンプレートに式を直接書くより、名前がついている分だけ読める（「説明用の変数の導入」と同じ効果）。
+
+代償は評価の回数で、Angular の getter は変更検知のたびに走るため、重い処理や、呼ばれるたびに新しい配列・オブジェクトを返す実装は避ける。持つか導出するかは、ずれる余地と計算コストの比較で決める。シグナル入力なら `computed()` で書ける。
 
 参照: https://angular.dev/guide/components/inputs
