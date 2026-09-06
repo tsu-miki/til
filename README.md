@@ -54,7 +54,7 @@ git add . && git commit -m "kotlin: sealed interface と網羅的 when"
 
 ### build-tools
 
-- [src/test/resources の中身は、テスト実行時のクラスパス直下に置かれる](./build-tools/test-resources-on-classpath-root.md)
+- [「クラスパス直下」は物理ディレクトリではなく、ビルドツールの規約が決める置き場所](./build-tools/test-resources-on-classpath-root.md)
 
 ### db
 
@@ -67,28 +67,28 @@ git add . && git commit -m "kotlin: sealed interface と網羅的 when"
 - [中途半端な統一を避ける方法は、全部やることではなく境界を明示すること](./design/consistency-needs-explainable-boundary.md)
 - [昔の制約でできた設計をやめてよいかは、理由が環境由来か構造由来かで決まる](./design/design-rationale-environmental-or-structural.md)
 - [継承をやめろと言われるのは、親クラスの実装の詳細に子が依存するから](./design/inheritance-depends-on-parent-internals.md)
-- [外部 DB の取り込みは、メダリオンアーキテクチャで 3 層に分けるのが選択肢の一つ](./design/medallion-architecture-for-external-db-sync.md)
+- [取り込んだ生データは、変換後とは別に丸ごと残す](./design/medallion-architecture-for-external-db-sync.md)
 - [YAGNI は予測で増やす複雑さへの警告で、手元にある情報を捨てる理由にはならない](./design/yagni-does-not-mean-discarding-known-information.md)
 
 ### domain-knowledge
 
 - [公開範囲がシビアなデータは、出す形をドメインに詳しい人に見てもらう](./domain-knowledge/ask-domain-expert-how-to-expose-data.md)
-- [経歴と略歴は別物](./domain-knowledge/keireki-and-ryakureki.md)
+- [会話で通じてしまう似た言葉ほど、項目にする前に意味の差を確かめる](./domain-knowledge/keireki-and-ryakureki.md)
 
 ### frontend
 
-- [Angular では @Input から派生する値を getter で作れる](./frontend/angular-getter-derives-value-from-input.md)
+- [入力から決まる値は、フィールドに持たずに導出する](./frontend/angular-getter-derives-value-from-input.md)
 - [「データがないときは表示しない」の書き方は、フレームワークの形式で決まる](./frontend/render-nothing-when-no-data.md)
 
 ### frontend-e2e
 
-- [Selenide の baseUrl は selenide.properties で設定できる](./frontend-e2e/selenide-base-url-in-properties-file.md)
-- [Selenide の shouldHave は条件を複数受け取れる](./frontend-e2e/selenide-should-have-multiple-conditions.md)
+- [設定をコードの外に出すときは、どこからの上書きが勝つかまで決める](./frontend-e2e/selenide-base-url-in-properties-file.md)
+- [待機つきの検証を分けて書くと、待ち時間はその数だけ積み上がる](./frontend-e2e/selenide-should-have-multiple-conditions.md)
 
 ### k8s
 
 - [原因がわからないときは、デバッグログ入りイメージを kubectl edit で差し替える](./k8s/kubectl-edit-for-production-debug.md)
-- [kubectl rollout restart で Pod を作り直す](./k8s/rollout-restart-deployment.md)
+- [宣言的なシステムでは、状態を直接動かす手段を探す前に宣言を変える](./k8s/rollout-restart-deployment.md)
 
 ### kotlin
 
@@ -103,12 +103,12 @@ git add . && git commit -m "kotlin: sealed interface と網羅的 when"
 
 ### refactoring
 
-- [メソッドの抽出](./refactoring/extract-method.md)
-- [説明用の変数の導入](./refactoring/introduce-explaining-variable.md)
+- [ルールをメソッドに切り出すと、そのルールを直す場所が 1 か所になる](./refactoring/extract-method.md)
+- [途中の値に目的の名前をつけると、コメントを書かずに手順が読める](./refactoring/introduce-explaining-variable.md)
 
 ### ruby
 
-- [Rails で HTML を解析するときの定番は Nokogiri（Rails ではなく Ruby の gem）](./ruby/nokogiri-html-parser.md)
+- [間接依存で入っているだけのライブラリを直接使うなら、依存に明示する](./ruby/nokogiri-html-parser.md)
 
 ### rust
 
@@ -118,8 +118,8 @@ git add . && git commit -m "kotlin: sealed interface と網羅的 when"
 
 ### tools
 
-- [comm はソート済みの 2 ファイルを 3 列で突き合わせる](./tools/comm-compares-sorted-files.md)
-- [Slack の Ctrl+F は、開いているチャンネルの中だけを検索する](./tools/slack-search-in-current-channel.md)
+- [比べたいのが並びなのか集合なのかで、使う道具が変わる](./tools/comm-compares-sorted-files.md)
+- [「見つからない」ときは、検索語より先に検索範囲の既定値を疑う](./tools/slack-search-in-current-channel.md)
 
 ### ui-design
 
