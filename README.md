@@ -67,6 +67,7 @@ git add . && git commit -m "kotlin: sealed interface と網羅的 when"
 
 - [中途半端な統一を避ける方法は、全部やることではなく境界を明示すること](./design/consistency-needs-explainable-boundary.md)
 - [昔の制約でできた設計をやめてよいかは、理由が環境由来か構造由来かで決まる](./design/design-rationale-environmental-or-structural.md)
+- [利用者ごとに複製される層に置けるのは、コピーごとに答えが違ってよい判断だけ](./design/duplicated-layer-holds-only-divergent-rules.md)
 - [継承をやめろと言われるのは、親クラスの実装の詳細に子が依存するから](./design/inheritance-depends-on-parent-internals.md)
 - [取り込んだ生データは、変換後とは別に丸ごと残す](./design/medallion-architecture-for-external-db-sync.md)
 - [YAGNI は予測で増やす複雑さへの警告で、手元にある情報を捨てる理由にはならない](./design/yagni-does-not-mean-discarding-known-information.md)
