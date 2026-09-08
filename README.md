@@ -33,7 +33,7 @@ git add . && git commit -m "kotlin: sealed interface と網羅的 when"
 
 <!-- index:begin -->
 
-現在 41 件。
+現在 42 件。
 
 ### accessibility
 
@@ -79,6 +79,7 @@ git add . && git commit -m "kotlin: sealed interface と網羅的 when"
 ### frontend
 
 - [入力から決まる値は、フィールドに持たずに導出する](./frontend/angular-getter-derives-value-from-input.md)
+- [読み込み中の表示は、通信の単位ではなくユーザーに見せたい順序の単位で区切る](./frontend/loading-boundary-by-reveal-sequence.md)
 - [「データがないときは表示しない」の書き方は、フレームワークの形式で決まる](./frontend/render-nothing-when-no-data.md)
 
 ### frontend-e2e
