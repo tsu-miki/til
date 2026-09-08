@@ -33,7 +33,7 @@ git add . && git commit -m "kotlin: sealed interface と網羅的 when"
 
 <!-- index:begin -->
 
-現在 40 件。
+現在 41 件。
 
 ### accessibility
 
@@ -51,6 +51,7 @@ git add . && git commit -m "kotlin: sealed interface と網羅的 when"
 - [表示可否が関連リソースで決まる項目は、判定材料ごと渡さずサーバ側で落とす](./api-design/omit-hidden-field-instead-of-sending-visibility.md)
 - [アウトサイドインで変わるのは設計の順序で、デプロイの順序ではない](./api-design/outside-in-is-design-order-not-deploy-order.md)
 - [別々にデプロイするサービス間では、破壊的変更を expand と contract に分ける](./api-design/parallel-change-for-breaking-api-change.md)
+- [GET か POST かは、冪等かどうかではなく、サーバの状態を変えるかで決まる](./api-design/safe-not-idempotent-decides-get-or-post.md)
 
 ### build-tools
 
